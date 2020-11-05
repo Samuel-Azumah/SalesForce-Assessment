@@ -1,0 +1,112 @@
+*{box-sizing: border-box;
+font-family: 'Courier New', Courier, monospace;
+margin: 0;
+padding: 0;
+}
+header{
+    background-image:url("azumahFav.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    filter: gray;
+    height: 15rem;
+    position: relative;
+    min-width: 80%;
+    vertical-align: top;
+
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+nav{
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-left: 1rem;
+}
+li{
+    list-style: none;
+    padding: 0.1rem;
+}
+nav li span{
+    padding-left: 1rem;
+}
+/*li a {
+    padding: 5px;
+    background-color: cornsilk;
+    text-decoration: none;
+}*/
+.container, 
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    width: 70%;
+}
+.image{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top:50px ;
+}
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+.product-title{
+    width: 45%;
+}
+
+.price{
+    width: 20%;
+  
+    display: flex;
+    align-items: center;
+}
+.quantity{
+width: 30%;
+border-bottom: 1px solid lightgrey;
+display: flex;
+    align-items: center;
+
+}
+.total{
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+.product{
+    width: 45%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+}
